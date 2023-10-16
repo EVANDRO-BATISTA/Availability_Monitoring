@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<div class="aside__config"><!--inicio configuração-->
+    <div class="config">
+        <form class="form-config">                
+            <legend>Configuração</legend>                    
+            <fieldset>
+                    <h4>Alerta</h4>                   
+                    <input class="place-holder" id="placenome" type="text" placeholder="Digite seu nome">
+                    <input class="place-holder" id="placenum" type="text" placeholder="Contato 00000-0000">
+                    <input class="place-text" id="btn-conf1" type="image" src="static/img/Buton_confirm.png" title="button" style="max-widht:32px; max-height:32px;">                    
+                    <hr>
+                        <h4>Som do alerta</h4>
+                        <select>
+                        <option selected >-----selecione-----</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        </select>                                              
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    <hr>
+                    <div class="cadastro-usuario">
+                        <div>
+                        <h4>Cadastro usuários</h4>
+                        <input class="place-holder" id="cad_user" type="text" name="name" placeholder="Nome...">
+                        <br>
+                        <input class="place-holder" id="cad_user" type="text" name="name" placeholder="Email...">
+                        <br>
+                        <input class="place-holder" id="cad_user" type="text" name="name" placeholder="Senha..."> 
+                        </div>  
+                        <div class="checkbox-config">      
+                            <input type="checkbox"> <span>Padrão</span><br>
+                            <input type="checkbox"> <span>Administrador</span>
+                            <input id="btn-conf2" type="image" src="static/img/Buton_confirm.png" title="button" style="max-widht:32px; max-height:32px;">                   
+                            <button class="custom-btn btn-1" id="btn-salvar">SALVAR</button>
+
+                        </div>
+                    </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="list-dados">
+                <div>
+                    <table class="rwd-table">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Developers</h3>
+                            <div class="pull-right">
+                                <span class="clickable filter" data-toggle="tooltip" title="Toggle table filter" data-container="body">
+                                    <i class="glyphicon glyphicon-filter"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <table class="table table-hover" id="dev-table">
+                            <thead>
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Username</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Kilgore</td>
+                                    <td>Trout</td>
+                                    <td>kilgore</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Bob</td>
+                                    <td>Loblaw</td>
+                                    <td>boblahblah</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Holden</td>
+                                    <td>Caulfield</td>
+                                    <td>penceyreject</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div>
+                        <h3 class="panel-title">Developers</h3>
+                            <div class="pull-right">
+                                <span class="clickable filter" data-toggle="tooltip" title="Toggle table filter" data-container="body">
+                                    <i class="glyphicon glyphicon-filter"></i>
+                                </span>
+                            </div>
+                        <table class="table table-hover" id="dev-table">
+                            <thead>
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Username</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Kilgore</td>
+                                    <td>Trout</td>
+                                    <td>kilgore</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Bob</td>
+                                    <td>Loblaw</td>
+                                    <td>boblahblah</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Holden</td>
+                                    <td>Caulfield</td>
+                                    <td>penceyreject</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </table>
+                </div>
+    </div>
+
+</div> <!--Fim configuração--> 
+
+{% endblock %}

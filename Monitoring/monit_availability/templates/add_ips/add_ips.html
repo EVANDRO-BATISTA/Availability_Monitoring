@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<div class="ips"><!--inicio add-ips--> 
+        <div class="aside__ips">
+          <legend>Lista</legend>
+          <ul class="nav__ips">      
+            <li class="nav-item">                
+              <a href="#profile" class="nav-option">IPs</a>
+              <div id="profile" class="nav-submenu">
+                  <a href="#" class="nav-submenu-link">Posts</a>
+                  <a href="#" class="nav-submenu-link">Images</a>
+              </div>
+            </li>
+            
+            <li class="nav-item">
+              <a href="#msg" class="nav-option">Grupo</a>
+              <div id="msg" class="nav-submenu">
+                  <a href="#" class="nav-submenu-link">New</a>
+                  <a href="#" class="nav-submenu-link">Sent</a>
+              </div>
+            </li>       
+        </ul>
+    </div>    
+    <!--article-ips-->
+    <div class="article__ips">
+        <div class="cad_ips">
+            <legend>ADD</legend>
+                <div class="nome_ips">
+                    <h4>Nome</h4>
+                    <input class="place-holder" id="nomedoip" type="text" name="name" placeholder="Nome...">
+                    <button class="custom-btn btn-1" id="btn_cip">Criar IP</button>
+                    <button class="custom-btn btn-1" id="btn_cgr">Criar Grupo</button>
+                    <button class="custom-btn btn-1" id="btn_update">Update</button>
+                    <button class="custom-btn btn-1" id="btn_deletar">Deletar</button>
+                    <span class="clickable filter" data-toggle="tooltip" title="Toggle table filter" data-container="body">
+                        <i class="glyphicon glyphicon-filter"></i>
+                    </span>
+                </div>
+                <table class="table table-hover" id="table_ips">
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                            <th>Username</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Kilgore</td>
+                            <td>Trout</td>
+                            <td>kilgore</td>
+                            <td>kilgore</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Bob</td>
+                            <td>Loblaw</td>
+                            <td>boblahblah</td>
+                            <td>kilgore</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Holden</td>
+                            <td>Caulfield</td>
+                            <td>penceyreject</td>
+                            <td>kilgore</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Holden</td>
+                            <td>Caulfield</td>
+                            <td>penceyreject</td>
+                            <td>kilgore</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <div class="pesquisa_ips">
+                        <h4>Pesquisa IPs</h4>
+                        <input class="place-holder" id="pesq_ips" type="text" name="name" placeholder="Nome...">
+                        <br>
+                        <input class="place-holder" id="pesq_ips" type="text" name="name" placeholder="Email...">
+                        <br>
+                        <input id="btn-conf2" type="image" src="static/img/pesquisa.png" title="button" style="max-widht:37px; max-height:37px;"> 
+                        <button class="custom-btn btn-1" id="btn_addips">Adicionar</button>
+                    </div>
+                    <div class="pull-right">
+                        <span class="clickable filter" data-toggle="tooltip" title="Toggle table filter" data-container="body">
+                            <i class="glyphicon glyphicon-filter"></i>
+                        </span>
+                    </div>
+                    <table class="table table-hover" id="table_pesqips">
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Username</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Kilgore</td>
+                                <td>Trout</td>
+                                <td>kilgore</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Bob</td>
+                                <td>Loblaw</td>
+                                <td>boblahblah</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Holden</td>
+                                <td>Caulfield</td>
+                                <td>penceyreject</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>                   
+        </div>
+    </div>
+
+</div><!--Fim add-ips--> 
+
+{% endblock %}

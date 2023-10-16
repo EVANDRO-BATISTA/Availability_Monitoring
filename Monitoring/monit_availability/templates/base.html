@@ -1,0 +1,62 @@
+{% load static %}
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <title>{% block title %}Monitoring{% endblock %}</title>
+  </head>
+    <body>
+      <script type="text/javascript" src="{% static "js/scripts.js" %}" ></script><!--script--> 
+      {% block login %}
+      
+      <header><!--inicio cabeçalho-->
+        <img class="logo" src="{% static 'img/Logo267.png' %}" alt="logo">
+        <nav class="nav__header"><!--inico navbar-->
+            <ul class="nav__links">
+                <li class="navbar"><a href="dashboard">Dashboard</a></li>
+                <li class="navbar"><a href="add_ips">Add Groups IPs</a></li>
+                <li class="navbar"><a href="config">Configuração</a></li>
+                <li class="navbar"><a href="relatorio">Relatorio</a></li>
+            </ul>
+        </nav><!--fim navbar-->
+        
+        <div class="toggle"><!--inicio login-status-->   
+          <h6 id="nav-sound">Sound</h6>                   
+            <input type="checkbox" id="bar" checked>
+            <label for="bar"></label>                        
+        </div>
+        <div class="login__status"><!--inicio login-status-->
+          <img class="usuario" src="{% static 'img/usuario.png' %}" alt="" style="max-widht:37px; max-height:37px;">
+            <h5 class="logado">Usuario Logado</h5>
+        </div>
+        <div class="login__status">
+          <button class="button-logout" onclick="redirecionar()">sair</button>
+      </div>      
+        <!--fim login-status-->
+
+    </header><!--Fim cabeçalho--> 
+          <!-- Option 1: Bootstrap Bundle with Popper -->
+          <script type="text/javascript" src="{% static "js/scripts.js" %}" ></script>
+          <script src="{% static 'script/bootstrap.bundle.min.js' %}"></script>
+          <script src="{% static 'script/jquery-3.7.1.min.js' %}"></script>
+    
+          <!-- Option 2: Separate Popper and Bootstrap JS -->
+          <!--
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+          -->
+    {% block conteudo %}
+
+    {% endblock %}
+
+    {% endblock login%}
+
+  </body>
+</html>

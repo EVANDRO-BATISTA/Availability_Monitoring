@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<div class="dashboard"><!--inicio dashboard--> 
+    <div class="sidebar__dashboard">
+        <legend class="dash__legend">Monitoring</legend>
+        <nav class="nav__side" role="navigation">
+            <div class="nav__container">
+                <div class="toggle-menu">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <div class="menu">
+                        <ul class="nav__ips">
+                            <li class="nav-item">                
+                                <a href="#profile" class="nav-option">IPs</a>
+                                <div id="profile" class="nav-submenu">
+                                    <a href="#" class="nav-submenu-link">Posts</a>
+                                    <a href="#" class="nav-submenu-link">Images</a>
+                                </div>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a href="#msg" class="nav-option">Grupo</a>
+                                <div id="msg" class="nav-submenu">
+                                    <a href="#" class="nav-submenu-link">New</a>
+                                    <a href="#" class="nav-submenu-link">Sent</a>
+                                </div>
+                            </li>       
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav> 
+    </div>
+        <div class="article__dashboard">
+            <h1 class="article-title">Article Title</h1>
+            <h5 class="article-topic">By Full Name Title of Writer - 01/01/1994 19:00</h5>          
+        </div>
+    
+</div><!--fim dashboard--> 
+{% endblock %}
+

@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<div class="relatorio"><!--inicio relatorio--> 
+    <div class="aside__relatorio">
+        <div class="pesquisa-relatorio">
+                <div>
+                    <legend>Relatório</legend>
+                    <input class="place-holder" id="" type="text" name="name" placeholder="Nome...">
+                    <input class="place-holder" id="" type="text" name="name" placeholder="Email...">
+                </div>
+                <div>
+                    <input class="place-holder" id="" type="text" name="name" placeholder="Nome...">
+                    <input class="place-holder" id="" type="text" name="name" placeholder="Email...">  
+                    <input class="place-holder" id="" type="text" name="name" placeholder="Email...">
+                    <input id="btn-conf2" type="image" src="static/img/pesquisa.png" title="button" style="max-widht:37px; max-height:37px;">
+                </div>
+        </div>    
+
+        <table class="table table-hover" id="table-relatorio">
+            
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                    <th>Username</th>
+                    <th>Username</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Kilgore</td>
+                    <td>Trout</td>
+                    <td>kilgore</td>
+                    <td>kilgore</td>
+                    <td>kilgore</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="btn-imprimir">                         
+            <button class="custom-btn btn-1">imprimir</button>
+        </div>
+    </div>
+</div><!--Fim relatorio--> 
+
+{% endblock %}

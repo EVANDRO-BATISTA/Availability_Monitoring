@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block login %}
+<header><!--nav login-->
+  <img class="logo" src="static/img/Logo267.png" alt="logo">
+  <nav><!--inico navbar-->
+    <ul class="nav__links">
+        <li><a href="dashboard.html"></a></li>
+        <li><a href="add_ips.html"></a></li>
+        <li><a href="config.html"></a></li>
+        <li><a href="relatorio.html"></a></li>
+    </ul>
+</nav>
+
+  <div>
+      <h5 href="#"><b>Login</h5>
+  </div>
+</header> <!--fim nav login-->
+
+<!--inicio login-->
+<section> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> 
+
+  <div class="signin"> 
+
+    <div class="content"> 
+
+    <h2>Login</h2> 
+
+    <form method="post" class="form"> 
+      {% csrf_token %}
+      <input type="hidden" name="next" value="{{ next }}">
+      
+      <div class="inputBox"> 
+      
+      <input type="name" required> <i>Username</i> 
+
+      </div> 
+
+      <div class="inputBox"> 
+      {% csrf_token %}
+      <input type="password" required> <i>Password</i> 
+
+      </div> 
+
+      <div class="inputBox"> 
+
+      <button type="submit" onclick="dashboard.html"> Entrar </button>
+
+      </div> 
+
+    </form>
+
+    </div> 
+
+  </div> 
+
+</section> <!-- fim login -->
+{% endblock login%}
